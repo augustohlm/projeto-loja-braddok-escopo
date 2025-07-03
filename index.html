@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- "sticky-top" irá manter o header no topo -->
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            
+            <h1 class="navbar-brand m-0 section-title nome-loja fs-4 fw-bold">
+                <a href="#">Braddok Store</a>
+            </h1>
+            
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon">
+
+                </span>
+            </button>
+            <!--O "Nav-pills" faz com que os itens do "li" pareçam ser botões-->
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-a-braddok" class="nav-link">
+                            <!--Para adicionar uma margem a direita basta utilizar o "me-1"-->
+                            <i class="bi bi-house-door me-1"></i>
+                                Sobre a Braddok
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#novidades" class="nav-link">
+                            <i class="bi bi-fire me-1"></i>
+                            Novidades</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#produtos" class="nav-link">
+                            <i class="bi bi-bag-check-fill me-1"></i>
+                            Produtos</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                        <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-a-braddok">
+        <div class="carousel slide text-center" data-bs-ride="carousel" id="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="images/slides/imagem-carousel-1.jpg" alt="Foto do espaço interno do restaurante">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="images/slides/imagem-carousel-2.jpg" alt="Duas taças de vinho">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="images/slides/imagem-carousel-3.jpg" alt="Uma mesa com comida">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="images/slides/imagem-carousel-4.jpg" alt="Uma mesa com comida">
+                </div>
+                
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" class="active" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+            </div>
+        </div>
+        <div class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="images/loja-braddok.jpg" class="d-block w-100 rounded" alt="Foto da fachada da loja">
+                    </div>
+                    <div class="col-md-7 mt-3 mt-md-0">
+                        <h2 class="section-title fw-bold">Sobre <span class="text-colored fw-bold">o restaurante</span></h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex consequatur quaerat adipisci qui facere! Corrupti, repellLorem ipsum dolor sit amet, consectetur adipisicing elit. Ex consequatur quaerat adipisci qui facere! Corrupti, repellendus, placeat haLorem ipsum dolor sit amet, consectetur adipisicing elit. Ex consequatur quaerat adipisci qui facere! Corrupti, repellendus, placeat harum deleniti unde, ipsum incidunt cupiditate nihil veritatis cum illum ipsam magni totLorem ipsum dolor sit amet, consectetur adipisicing elit. Ex consequatur quaerat adipisci qui facere! Corrupti, repellendus, placeat harum deleniti unde, ipsum incidunt cupiditate nihil veritatis cum illum ipsam magni totrum deleniti unde, ipsum incidunt cupiditate nihil veritatis cum illum ipsam magni totum incidunt cupiditate nihil veritatis cum illum ipsam magni totEx consequatur quaerat adipisci qui facere! Corrupti, repellendus, placeat harum deleniti unde, ipsum incidunt cupiditate nihil veritatis cum illum ipsam magni totam!
+                        </p>
+                        <h3 class="section-title fw-bold">Sobre <span class="text-colored fw-bold">o espaço</span></h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. onsequatur soeniam aut deserunt neque harum dolores corrupti molestonsequatur soeniam aut deserunt neque harum dolores corrupti molest Ratione illo nostrum obcaecati. Consequatur soeniam aut deserunt neque harum dolores corrupti molestiae.</p>
+                        <ul>
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="novidades" class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="section-title text-center fw-bold h2-novidades">Novidades</h2>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4 button-position">
+                    <img src="images/novidades/novidade-1.jpg" alt="" class="d-block w-100 rounded mb-2">
+                    <h3 class="section-title text-colored fs-4 fw-bold">Moletom bege</h3>
+                    <p>
+                        Moletom cor de bege - Algodão 100%
+                    </p>
+                    <div class="price">
+                        <p>De: <del>R$ 399,99</del></p>
+                        <p>Por:<strong>R$ 299,99</strong></p>
+                    </div>
+                    <button><i class="bi bi-cart4 me-1"></i>Adicionar ao Carrinho</button>
+                </div>
+                <div class="col-md-4 button-position">
+                    <img src="images/novidades/novidade-2.jpg" alt="" class="d-block w-100 rounded mb-2">
+                    <h3 class="section-title text-colored fs-4 fw-bold">Blusa FIRE bege</h3>
+                    <p>
+                        Blusa oversize cor de bege - FIRE - Algodão 100%
+                    </p>
+                    <div class="price">
+                        <p>De: <del>R$ 299,99</del></p>
+                        <p>Por: <strong>R$ 199,99</strong></p>
+                    </div>
+                    <button><i class="bi bi-cart4 me-1"></i>Adicionar ao Carrinho</button>
+                </div>
+                <div class="col-md-4 button-position">
+                    <img src="images/novidades/novidade-3.jpg" alt="" class="d-block w-100 rounded mb-2">
+                    <h3 class="section-title text-colored fs-4 fw-bold">Blusa Thug Life - Wanted</h3>
+                    <p>
+                        Moletom oversize preta Thug Life - Wanted - Algodão 100%
+                    </p>
+                    <div class="price">
+                        <p>De: <del>R$ 299,99</del></p>
+                        <p>Por: <strong>R$ 249,99</strong></p>
+                    </div>
+                    <button><i class="bi bi-cart4 me-1"></i>Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="produtos" class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="section-title text-center mb-5 fw-bold">
+                    Produtos
+                </h2>
+            </div>
+            <div class="row">
+                <aside class="col-md-2">
+                    <nav class="nav nav-pills flex-column nav-produto">
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#camisetas" class="fw-bold text-start nav-link text-colored active">Camisetas</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#bermudas" class="fw-bold text-start nav-link text-colored">Bermudas</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#jaquetas" class="fw-bold text-start nav-link text-colored">Jaquetas</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#calcas" class="fw-bold text-start nav-link text-colored">Calças</button>
+                    </nav>
+                </aside>
+            <div class="col-md-10">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="camisetas">
+                        <div class="row">
+                            <div class="col-md-3 button-position">
+                                <img class="d-block w-100" src="images/roupas/Camisetas/camiseta-1.jpg" alt="Camiseta 1">
+                                <h5 class="text-colored mt-2">Camiseta 1</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amt cont conet cons nisi?
+                                </p>
+                                <div class="price">
+                                    <p>De: <del>R$ 299,99</del></p>
+                                    <p>Por: <strong>R$ 249,99</strong></p>
+                                </div>
+                                <button><i class="bi bi-cart4 me-1"></i>Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="col-md-3 button-position">
+                                <img class="d-block w-100" src="images/roupas/Camisetas/camiseta-2.jpg" alt="Camiseta 2">
+                                <h5 class="text-colored mt-2">Camiseta 2</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amt cont conet cons nisi?
+                                </p>
+                                <div class="price">
+                                    <p>De: <del>R$ 299,99</del></p>
+                                    <p>Por: <strong>R$ 249,99</strong></p>
+                                </div>
+                                <button><i class="bi bi-cart4 me-1"></i>Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="col-md-3 button-position">
+                                <img class="d-block w-100" src="images/roupas/Camisetas/camiseta-3.jpg" alt="Camiseta 3">
+                                <h5 class="text-colored mt-2">Camiseta 3</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amt cont conet cons nisi?
+                                </p>
+                                <div class="price">
+                                    <p>De: <del>R$ 299,99</del></p>
+                                    <p>Por: <strong>R$ 249,99</strong></p>
+                                </div>
+                                <button><i class="bi bi-cart4 me-1"></i>Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="col-md-3 button-position">
+                                <img class="d-block w-100" src="images/roupas/Camisetas/camiseta-4.jpg" alt="Camiseta 4">
+                                <h5 class="text-colored mt-2">Camiseta 4</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amt cont conet cons nisi?
+                                </p>
+                                <div class="price">
+                                    <p>De: <del>R$ 299,99</del></p>
+                                    <p>Por: <strong>R$ 249,99</strong></p>
+                                </div>
+                                <button><i class="bi bi-cart4 me-1"></i>Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="col-md-3 button-position">
+                                <img class="d-block w-100" src="images/roupas/Camisetas/camiseta-5.jpg" alt="Camiseta 5">
+                                <h5 class="text-colored mt-2">Camiseta 5</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amt cont conet cons nisi?
+                                </p>
+                                <div class="price">
+                                    <p>De: <del>R$ 299,99</del></p>
+                                    <p>Por: <strong>R$ 249,99</strong></p>
+                                </div>
+                                <button><i class="bi bi-cart4 me-1"></i>Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="bermudas">
+                        <div class="row">
+                            <div class="col-md-3 button-position">
+                                <img class="d-block w-100" src="images/roupas/Bermudas/bermuda-1.jpg" alt="Bermuda 1">
+                                <h5 class="text-colored mt-2">Bermuda 1</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amt cont conet cons nisi?
+                                </p>
+                                <div class="price">
+                                    <p>De: <del>R$ 299,99</del></p>
+                                    <p>Por: <strong>R$ 249,99</strong></p>
+                                </div>
+                                <button><i class="bi bi-cart4 me-1"></i>Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="col-md-3 button-position">
+                                <img class="d-block w-100" src="images/roupas/Bermudas/bermuda-2.jpg" alt="Bermuda 2">
+                                <h5 class="text-colored mt-2">Bermuda 2</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amt cont conet cons nisi?
+                                </p>
+                                <div class="price">
+                                    <p>De: <del>R$ 299,99</del></p>
+                                    <p>Por: <strong>R$ 249,99</strong></p>
+                                </div>
+                                <button><i class="bi bi-cart4 me-1"></i>Adicionar ao Carrinho</button>
+                            </div>
+                                <div class="col-md-3 button-position">
+                                <img class="d-block w-100" src="images/roupas/Bermudas/bermuda-3.jpg" alt="Bermuda 3">
+                                <h5 class="text-colored mt-2">Bermuda 3</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amt cont conet cons nisi?
+                                </p>
+                                <div class="price">
+                                    <p>De: <del>R$ 299,99</del></p>
+                                    <p>Por: <strong>R$ 249,99</strong></p>
+                                </div>
+                                <button><i class="bi bi-cart4 me-1"></i>Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="col-md-3 button-position">
+                                <img class="d-block w-100" src="images/roupas/Bermudas/bermuda-4.jpg" alt="Bermuda 4">
+                                <h5 class="text-colored mt-2">Bermuda 4</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amt cont conet cons nisi?
+                                </p>
+                                <div class="price">
+                                    <p>De: <del>R$ 299,99</del></p>
+                                    <p>Por: <strong>R$ 249,99</strong></p>
+                                </div>
+                                <button><i class="bi bi-cart4 me-1"></i>Adicionar ao Carrinho</button>
+                            </div>
+                            <div class="col-md-3 button-position">
+                                <img class="d-block w-100" src="images/roupas/Bermudas/bermuda-5.jpg" alt="Bermuda 5">
+                                <h5 class="text-colored mt-2">Bermuda 5</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amt cont conet cons nisi?
+                                </p>
+                                <div class="price">
+                                    <p>De: <del>R$ 299,99</del></p>
+                                    <p>Por: <strong>R$ 249,99</strong></p>
+                                </div>
+                                <button><i class="bi bi-cart4 me-1"></i>Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="jaquetas">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="images/cardapio/entradas/entrada.jpg" alt="Nome da entrada">
+                                <h5 class="text-colored mt-2">Nome da entrada</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amt cont conet cons nisi?
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="images/cardapio/entradas/entrada.jpg" alt="Nome da entrada">
+                                <h5 class="text-colored mt-2">Nome da entrada</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amt cont conet cons nisi?
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="images/cardapio/entradas/entrada.jpg" alt="Nome da entrada">
+                                <h5 class="text-colored mt-2">Nome da entrada</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amt cont conet cons nisi?
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="images/cardapio/entradas/entrada.jpg" alt="Nome da entrada">
+                                <h5 class="text-colored mt-2">Nome da entrada</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amt cont conet cons nisi?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="calcas">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="images/cardapio/pratos/pizza.jpg" alt="pizza">
+                                <h5 class="text-colored mt-2">pizza</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amt cont conet cons nisi?
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="images/cardapio/pratos/salmao.jpg" alt="salmão">
+                                <h5 class="text-colored mt-2">Salmão</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amt cont conet cons nisi?
+                                </p>
+                            </div>
+                                <div class="col-md-3">
+                                <img class="d-block w-100" src="images/cardapio/pratos/pizza.jpg" alt="pizza">
+                                <h5 class="text-colored mt-2">pizza</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amt cont conet cons nisi?
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="images/cardapio/pratos/salmao.jpg" alt="salmão">
+                                <h5 class="text-colored mt-2">Salmão</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amt cont conet cons nisi?
+                                </p>
+                            </div>
+                                <div class="col-md-3">
+                                <img class="d-block w-100" src="images/cardapio/pratos/pizza.jpg" alt="pizza">
+                                <h5 class="text-colored mt-2">pizza</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amt cont conet cons nisi?
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="images/cardapio/pratos/salmao.jpg" alt="salmão">
+                                <h5 class="text-colored mt-2">Salmão</h5>
+                                <p>
+                                    Lorem ipsum, dolor sit amt cont conet cons nisi?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+    </section>
+    <section id="fale-conosco" class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="section-title text-center fw-bold key-fale"> Fale <span class="text-colored">conosco</span></h2>
+            </div>
+            <div class="row">
+                <div class="col-md-7 mb-5">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                            <input type="text" id="nome" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                            <input type="tel" id="telefone" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                            <textarea class="form-control" id="mensagem" required></textarea>
+                        </div>
+                        <button type="submit" class="btn fw-bold">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <h3 class="section-title fs-4 text-colored key-fale">
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            Redes sociais
+                        </h3>
+                        <ul class="social-links">
+                            <li class="fs-5">
+                                <a href="#">
+                                    <i class="bi bi-facebook text-colored"></i>
+                                </a>
+                            </li>
+                            <li class="fs-5 ms-1 me-1">
+                                <a href="#">
+                                    <i class="bi bi-instagram text-colored"></i>
+                                </a>
+                            </li>
+                            <li class="fs-5">
+                                <a href="#">
+                                    <i class="bi bi-whatsapp text-colored"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row mt-4">
+                        <h3 class="section-title fs-4 text-colored ">
+                            <i class="bi bi-cursor-fill"></i>
+                            Endereço
+                        </h3>
+                        <p>
+                            Rua Teste Exemplo, nº 145, Bairro Bootstrap - São Paulo - SP
+                        </p>
+                    </div>
+                </div>
+            
+            </div>
+        
+        </div>
+    </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

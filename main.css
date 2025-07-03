@@ -1,0 +1,129 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.navbar {
+    background-color: #000000;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: #000000;
+}
+
+#cabecalho .nav .nav-link, 
+.navbar-brand,
+.navbar-brand:hover,
+.nav-produto .nav-link.active:hover {
+    color:#fff;
+}
+
+.navbar-toggler, #produtos {
+    background-color: #fff;
+}
+
+.section-title {
+    font-family: "Yuji Mai", serif;
+}
+
+.carousel-inner {
+    background-color: #000000;
+}
+
+
+.text-colored {
+    color: #ce0000;
+}
+
+
+#novidades, #fale-conosco {
+    background-color: #000000;
+}
+
+#novidades p, 
+.price p,
+.h2-novidades,
+.key-fale,
+#fale-conosco {
+    color: #fff;
+}
+
+#novidades button {
+    background-color: #fff;
+    color: #000000;
+    padding: 6px 0;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.button-position{
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.button-position button{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+}
+
+#produtos .col-md-3 button {
+    background-color: #000000;
+    color: #fff;
+    padding: 6px 0;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+#produtos p {
+    color: #000000;
+}
+
+.price del {
+    color: #ce0000;
+}
+
+.price strong {
+    color: green;
+}
+
+.nav-produto .nav-link.active,
+#fale-conosco button {
+    background-color: #ce0000;
+    color: #fff;
+}
+
+.nav-produto .nav-link:hover {
+    color: #ce0000;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+.nome-loja a {
+    text-decoration: none;
+    color: #fff
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+}
